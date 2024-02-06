@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav span img {
+    width: 9.25rem;
+    height: 2.5rem;
+}
+
+.main {
+    background-image: url(Bg-Logo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2000px, 100vw);
+    height: 100vh;
+    width: 100%;
+}
+
+.main .box {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.box-content {
+    color: white;
+    height: calc(100% - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 23px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.box-content> :first-child {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.box-content:nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.box-content:nth-child(3) {
+    font-weight: 400;
+    font-size: 24px;
+}
+.seperation {
+    background-color: rgb(46, 44, 44);
+    height: 7px;
+    width: 100%;
+}
+
+.btn-sign-in {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d80f19;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-sign-in:hover {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d80f19;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(192, 11, 11);
+}
+
+.btn-started {
+    font-size: 20px;
+    padding: 13px 24px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.btn-started:hover {
+    font-size: 20px;
+    padding: 13px 24px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: rgb(192, 11, 11);
+}
+
+.main input, .faq-form input {
+    font-size: 12px;
+    padding: 15px 101px 15px 17px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    font-weight: 900;
+    border: 2px solid #dbd4d457;
+    text-align: left;
+}
+.main input, .faq-form input {
+    font-size: 12px;
+    padding: 15px 101px 15px 17px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    font-weight: 900;
+    border: 2px solid #dbd4d457;
+    text-align: left;
+}
+
+.input-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+.section1 > div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+
+}
+.section-img{
+    position: relative;
+    display: inline-block;
+    margin: 10px 0px;
+}
+.section-img img {
+    display: block;
+    width: 555px;
+    height: auto;
+    
+}
+.section-img video {
+    position: absolute;
+    top: 91px;
+    right: 0;
+    border: 10px solid black;
+    border-radius: 10px;
+    z-index: -10;
+    width: 478px;
+}
+.section1 div > :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+.section1 div> :nth-child(2){
+    font-size: 24px;
+}
+.third{
+    margin: 50px 0px;
+    padding: 0px 10px;
+}
+.faq{
+    background-color: black;
+    color: white;
+}
+.faq h1{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    margin: 23px 0px;
+    font-weight: 900;
+}
+.faqbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 25px;
+    max-width: 72vw;
+    margin: 10px auto;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.faqbox:hover{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3d3d3d;
+    padding: 25px;
+    max-width: 72vw;
+    margin: 10px auto;
+    font-size: 24px;
+    cursor: pointer;
+}
+.faq-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.faq-form span{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.faq-form input, .faq-form button{
+    margin: 0px 0px 45px 0px;
+}
+footer{
+    color: rgba(255,255,255,0.7);
+    max-width: 60vw;
+    margin: auto;
+}
+footer .questions{
+    padding: 34px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color:rgba(255,255,255,0.7);
+}
+footer div a{
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:1300px) {
+    .box-content> :first-child {
+        font-weight: 900;
+        font-size: 32px;
+    }
+    .box-content:nth-child(2) {
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    .box-content:nth-child(3) {
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .input-btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .section1{
+        flex-wrap: wrap;
+    }
+    .section-img img {
+        display: block;
+        width: 305px;
+        height: auto;
+    }
+    .section-img video {
+        position: absolute;
+        top: 74px;
+        right: 0;
+        border: 10px solid black;
+        border-radius: 10px;
+        z-index: -10;
+        width: 255px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
